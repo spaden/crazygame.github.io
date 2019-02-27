@@ -10,6 +10,8 @@ class psy {
 
 
 app.controller("Fut", function($scope, $interval, $location) {
+
+
     var obj = [],
         sum = 0;
 
@@ -150,11 +152,11 @@ app.controller("Fut", function($scope, $interval, $location) {
         $location.path("/results/" + res);
 
     }
-
+    var ser;
     $scope.before();
     var changeBack = function() {
         var img = ["http://localhost/img/natgirl1.jpg", "http://localhost/img/natgirl2.jpg", "http://localhost/img/natgirl3.jpg", "http://localhost/img/natgirl4.jpg", "http://localhost/img/natgirl5.jpg", "http://localhost/img/natgirl6.jpg", "http://localhost/img/natgirl7.jpg"]
-        $interval(function() {
+        ser = $interval(function() {
             var p = document.getElementById("backw");
             p.style.backgroundImage = `url(${img[Math.floor((Math.random() * 6) + 0)]})`
         }, 5000);
@@ -162,6 +164,16 @@ app.controller("Fut", function($scope, $interval, $location) {
 
     }
 
+
     changeBack();
+
+    if ($location.path() == "/blink") {
+        $interval.cancel(ser);
+        console.log("entered")
+        var p = document.getElementById("backw");
+        p.style.backgroundImage = null;
+    }
+
+    console.log($location.path());
 
 })
