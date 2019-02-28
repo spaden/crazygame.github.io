@@ -3,10 +3,46 @@
     background-color: crimson;
 }
 
+#train {
+    font-size: 1.3em;
+}
+
+.disp {
+    background-color: #eaecee;
+    opacity: 0.8;
+}
+
+#tt>h5 {
+    font-family: 'Seymour One', sans-serif;
+    font-stretch: expanded;
+    font-size: 2.9em;
+}
+
+#tt>p {
+    font-size: 1.3em;
+}
+
 .opts {
     margin-left: 1.8em;
     font-size: 1.1em;
     font-family: "Lucida Console", Monaco, monospace;
+}
+
+#dt>h3 {
+    font-family: 'Seymour One', sans-serif;
+    font-stretch: expanded;
+    font-size: 2.9em;
+}
+
+#dt>p {
+    font-family: 'Seymour One', sans-serif;
+    font-size: 1.8em;
+}
+
+carousel-inner img {
+    width: 100%;
+    height: 10%;
+    opacity: 0.8;
 }
 
 #lov {
@@ -24,6 +60,10 @@
     font-stretch: expanded;
     font-size: 120%;
     font-style: italic;
+}
+
+.dp {
+    background-color: #ccf8f5;
 }
 
 .fresl {
@@ -56,7 +96,7 @@
 }
 
 #ct {
-    background-color: blue;
+    background-color: #d4e3e2;
     opacity: 0.89;
 }
 

@@ -18,6 +18,8 @@ app.controller('Blink', function($scope, $timeout, $interval) {
     $scope.reset = function() {
         count = 0;
         $scope.orginalCount = "Orginal count =" + 0;
+        prev.style.backgroundColor = "crimson";
+        prev2.style.backgroundColor = "crimson";
     }
 
 
@@ -56,7 +58,7 @@ app.controller('Blink', function($scope, $timeout, $interval) {
                 count = count + 2;
             }
 
-        }, 500);
+        }, 300);
 
 
 

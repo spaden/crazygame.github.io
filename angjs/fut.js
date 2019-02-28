@@ -14,7 +14,7 @@ app.controller("Fut", function($scope, $interval, $location) {
 
     var obj = [],
         sum = 0;
-
+    var ser;
 
     var qst = ["Why did your parents choose the name you have now?", "How long is your name?", "What is it the first letter of your name?",
         "Is your name popular?", "Do you have a nickname?", " How do you feel about performing?",
