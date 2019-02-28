@@ -159,7 +159,7 @@ app.controller("Fut", function($scope, $interval, $location) {
         ser = $interval(function() {
             var p = document.getElementById("backw");
             p.style.backgroundImage = `url(${img[Math.floor((Math.random() * 6) + 0)]})`
-        }, 5000);
+        }, 7000);
 
 
     }
@@ -167,13 +167,12 @@ app.controller("Fut", function($scope, $interval, $location) {
 
     changeBack();
 
-    if ($location.path() == "/blink") {
-        $interval.cancel(ser);
-        console.log("entered")
-        var p = document.getElementById("backw");
-        p.style.backgroundImage = null;
-    }
 
     console.log($location.path());
+
+    $scope.$on('$destroy', function() {
+        $interval.cancel(ser);
+        // Do your cleanup here or call a function that does
+    });
 
 })
