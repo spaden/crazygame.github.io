@@ -155,10 +155,12 @@ app.controller("Fut", function($scope, $interval, $location) {
     var ser;
     $scope.before();
     var changeBack = function() {
-        var img = ["http://localhost/img/natgirl1.jpg", "http://localhost/img/natgirl2.jpg", "http://localhost/img/natgirl3.jpg", "http://localhost/img/natgirl4.jpg", "http://localhost/img/natgirl5.jpg", "http://localhost/img/natgirl6.jpg", "http://localhost/img/natgirl7.jpg"]
+        var img = ["http://localhost/img/natgirl1.jpg", "http://localhost/img/natgirl2.jpg", "http://localhost/img/natgirl3.jpg", "http://localhost/img/natgirl4.jpg", "http://localhost/img/natgirl5.jpg", "http://localhost/img/natgirl6.jpg", "http://localhost/img/natgirl7.jpg", "http://localhost/img/res1.jpg", "http://localhost/img/res2.jpg", "http://localhost/img/res3.jpg", "http://localhost/img/res4.jpg", "http://localhost/img/res5.jpg", "http://localhost/img/res6.jpg", "http://localhost/img/res7.jpg", "http://localhost/img/res8.jpg",
+            "http://localhost/img/res9.jpg", "http://localhost/img/res10.jpg"
+        ]
         ser = $interval(function() {
             var p = document.getElementById("backw");
-            p.style.backgroundImage = `url(${img[Math.floor((Math.random() * 6) + 0)]})`
+            p.style.backgroundImage = `url(${img[Math.floor((Math.random() * 16) + 0)]})`
         }, 7000);
 
 

@@ -10,22 +10,43 @@
 }
 
 #lov {
+    opacity: 0.9;
     background-color: #DAF7A6;
-    padding: 2em;
+    padding: 1.4em;
 }
 
-#hpimg {
+.hpimg {
     width: 90%;
-    height: 70%;
+    height: 90%;
 }
 
-#hpimg2 {
+#fresl {
+    font-stretch: expanded;
+    font-size: 120%;
+    font-style: italic;
+}
+
+.fresl {
+    background-color: #D7F4CC;
+    opacity: 0.8;
+}
+
+.fresl2 {
+    opacity: 0.89;
+}
+
+#hpimg4 {
+    width: 100%;
+    height: 100%;
+}
+
+.hpimgt {
     width: 100%;
     height: 100%;
 }
 
 #fres {
-    font-size: 1.2em;
+    font-size: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
